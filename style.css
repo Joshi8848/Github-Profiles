@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  /* background-image: linear-gradient(
+    to right top,
+    #092b5e,
+    #0a3172,
+    #133686,
+    #213b9a,
+    #333eae
+  ); */
+  background-image: linear-gradient(
+    to right top,
+    #101e32,
+    #101c30,
+    #101a2e,
+    #11172c,
+    #11152a
+  );
+  background-repeat: no-repeat;
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+
+img {
+  width: 100%;
+}
+
+.search-bar {
+  position: absolute;
+  top: 5%;
+  left: 28%;
+}
+
+#search {
+  background-color: #313883;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  border: 2px solid #071437;
+
+  font-size: 1rem;
+  color: white;
+}
+
+#search::placeholder {
+  color: white;
+}
+
+#search:focus {
+  outline: #071437;
+}
+
+.profile-container {
+  max-width: 55rem;
+  min-height: 20rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 4px 1px #08193d;
+  background-image: linear-gradient(
+    to right top,
+    #0a2348,
+    #091e42,
+    #08193d,
+    #071437,
+    #080e32
+  );
+  display: flex;
+}
+
+.img-container {
+  padding-left: 4rem;
+  align-self: center;
+}
+
+.img-container img {
+  border-radius: 100%;
+
+  width: 10rem;
+  height: 10rem;
+  box-shadow: 0 0 3px 10px #313883;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  padding: 3rem 1rem 2rem 5rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+h4 {
+  font-weight: 500;
+  color: rgb(136, 132, 132);
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-top: 0.7rem;
+  color: rgb(209, 203, 203);
+  margin-bottom: 2rem;
+}
+
+.icon-container {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.icon-container li {
+  color: rgb(138, 131, 131);
+}
+
+.user-info {
+  margin-right: 7px;
+  color: white;
+}
+
+.repos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  padding-right: 1rem;
+}
+
+.repos li {
+  padding: 0.5rem;
+  background-color: #313883;
+  list-style: none;
+  transition: all 0.3s;
+}
+
+.repos li a {
+  text-decoration: none;
+  color: rgb(211, 208, 208);
+}
+
+.repos li:hover {
+  background-color: #213b9a;
+}
